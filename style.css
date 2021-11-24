@@ -1,0 +1,82 @@
+/* tags, id’s en classes. hiermee ook geneste selecties maken (bv. alle a tags in een div tag). 
+verschil tussen de verschillende absolute en relatieve eenheden en kan deze toepassen.
+flexbox of css grid om je layout te maken.
+media queries en relatieve eenheden om je layout geschikt te maken voor desktop én mobiele apparaten.
+meerdere browsers. */
+
+html {
+    background-color: rgb(18, 30, 97);
+  }
+  
+h1 {
+  color: rgb(255, 174, 0);
+  text-align: center;
+}
+  
+h2 {
+  color: rgb(255, 174, 0);
+  text-align: center;
+}
+
+button{
+  bottom:20px;
+}
+
+nav {
+  font-family: verdana;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  color: rgb(255, 174, 0);
+  background :rgb(67, 88, 182);
+}
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(255, 174, 0);
+}
+  
+footer {
+  position:fixed;
+  width:100%;
+  bottom: 0px;
+  height:100px;   
+  background :rgb(67, 88, 182);
+  color: rgb(255, 174, 0);
+}
+
+.img {
+  align-content: left;
+  width: 50%;
+}
+
+.text {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen
+and (max-device-width: 1024px) {
+    html {
+        background: url('https://c.tenor.com/yheo1GGu3FwAAAAM/rick-roll-rick-ashley.gif%27');
+        background-size: cover
+    }
+    h1{
+      color: darkblue;
+    }
+    .text{
+      color: darkblue;
+    }
+  }
